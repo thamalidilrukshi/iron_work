@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/Home.css";
+import"../assets/images/project1.jpg"
 
 const TopBar = () => {
   return (
@@ -58,7 +59,7 @@ const HeroSection = () => {
         <button className="cta-button">Get Free Quote</button>
       </div>
       <div className="hero-image">
-        <img src="../assets/images/hero.jpg" alt="Hero" />
+        {/* <img src="../images/hero.jpg" alt="Hero" /> */}
       </div>
     </section>
   );
@@ -70,7 +71,7 @@ const ServicesSection = () => {
       <h2>Our Services</h2>
       <div className="services">
         <div className="service">
-          <img src="assets/images/construction.jpg" alt="Construction" />
+          <img src="../images/construction.jpg" alt="Construction" />
           <h3>Construction</h3>
           <p>
             We specialize in reliable and efficient construction services to
@@ -78,7 +79,7 @@ const ServicesSection = () => {
           </p>
         </div>
         <div className="service">
-          <img src="../assets/images/renovation.jpg" alt="Renovation" />
+          <img src="../images/renovation.jpg" alt="Renovation" />
           <h3>Renovation</h3>
           <p>
             Our renovation experts can transform your existing spaces to meet
@@ -86,7 +87,7 @@ const ServicesSection = () => {
           </p>
         </div>
         <div className="service">
-          <img src="/assets/images/my.jpg" alt="Architecture" />
+          <img src="../images/my.jpg" alt="Architecture" />
           <h3>Architecture</h3>
           <p>
             Our talented architects create innovative designs tailored to your
@@ -98,23 +99,23 @@ const ServicesSection = () => {
   );
 };
 
-const ProjectsSection = () => {
+const LatestProjectsSection = () => {
   return (
-    <section className="projects-section">
-      <h2>Our Latest Projects</h2>
+    <section className="latest-projects-section">
+      <h2>Latest Projects</h2>
       <div className="projects">
         <div className="project">
-          <img src="../assets/images/project1.jpg" alt="Project 1" />
+          <img src="./images/project1.jpg" alt="Project1" />
           <h3>Residential Building</h3>
           <p>A modern and sustainable residential building.</p>
         </div>
         <div className="project">
-          <img src="../assets/images/project2.jpg" alt="Project 2" />
+          <img src="../images/project2.jpg" alt="Project 2" />
           <h3>Commercial Office</h3>
           <p>A state-of-the-art commercial office space.</p>
         </div>
         <div className="project">
-          <img src="../assets/images/project3.jpg" alt="Project 3" />
+          <img src="./images/project3.jpg" alt="Project 3" />
           <h3>Retail Storefront</h3>
           <p>A visually appealing and functional retail storefront.</p>
         </div>
@@ -180,7 +181,7 @@ const Home = () => {
 
       <ServicesSection />
 
-      <ProjectsSection />
+      <LatestProjectsSection />
 
       <Footer />
     </div>

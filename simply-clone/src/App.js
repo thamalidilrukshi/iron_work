@@ -9,6 +9,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import AdminPanel from './components/AdminPanel';
+import Project1 from './assets/images/project1.jpg' 
 
 const App = () => {
   return (
