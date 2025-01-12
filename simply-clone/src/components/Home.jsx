@@ -21,7 +21,9 @@ const TopBar = () => {
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">Brixel</div>
+      <div className="logo">
+        <img src="../images/logo.png" alt="Brixel Logo" />
+      </div>
       <ul className="nav-links">
         <li>
           <a href="#">Home</a>
@@ -42,6 +44,8 @@ const Navbar = () => {
     </nav>
   );
 };
+
+
 
 const HeroSection = () => {
   return (
