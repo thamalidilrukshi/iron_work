@@ -9,7 +9,10 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import AdminPanel from './components/AdminPanel';
-import Project1 from './assets/images/project1.jpg' 
+import Project1 from './assets/images/project1.jpg';
+import Projects from './components/Projects';
+
+
 
 const App = () => {
   return (
@@ -17,10 +20,11 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/About" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin" element={<AdminPanel />} />
+       
       </Routes>
       <Footer />
     </Router>

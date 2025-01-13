@@ -241,6 +241,13 @@ body {
   color: #ccc;
 }
 
+/* Google Map */
+iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .hero-section {
@@ -283,6 +290,7 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* Top Bar */
   .top-bar {
     flex-direction: column;
     text-align: center;
@@ -293,28 +301,71 @@ body {
     margin-bottom: 10px;
   }
 
-  .nav-links {
+  /* Navbar */
+  .navbar {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
+    align-items: center;
+    padding: 20px;
   }
 
   .logo img {
-    max-height: 30px;
+    max-height: 50px;
+    margin-bottom: 20px;
   }
 
   .logo span {
     font-size: 20px;
   }
 
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: auto;
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero-image {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* Services Section */
+  .services,
+  .projects {
+    justify-content: space-around;
+  }
+
   .service,
   .project {
     width: 100%;
+    margin-bottom: 20px;
   }
 
+  /* Footer */
   .footer-content {
     flex-direction: column;
     align-items: center;
